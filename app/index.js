@@ -64,6 +64,18 @@ app.get('/:id', (req, res) => {
     });
 })
 
+app.get('/', (req, res) => {
+    Form.find({}, (err, form) => {
+        if(err) {
+            return res.status(500).send(err.message)
+        }
+        if(!form) {
+            return res.status(404).send("empty database");
+        }
+        res.json(form);
+    })
+})
+
 
 
 app.listen(3000, () => {
