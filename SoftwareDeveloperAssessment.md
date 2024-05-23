@@ -49,7 +49,7 @@ how to run your api.
 
 You must build a web application that:
 
--   Allows users to query the public API you\'ve selected
+-   Allows users to query the public API you've selected
 -   Allows users to enter responses to the form you designed earlier and
     view the other responses to the form
 
